@@ -21,7 +21,7 @@ public class MercadoMaquinasScraper extends AbstractScraper {
     private static final By XPATH_YEAR_MODEL = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[1]/div/div[2]/div/ul/li[6]/span[2]");
     private static final By XPATH_MARK = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[1]/div/div[2]/div/ul/li[4]/span[2]/a");
     private static final By XPATH_MODEL = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[1]/div/div[2]/div/ul/li[5]/span[2]/a");
-    private static final By XPATH_WORKER_HOURS = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[1]/div/div[3]/div[3]/ul[4]/li/span[2]");
+    private static final By XPATH_WORKER_HOURS = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[1]/div/div[3]/div[3]/ul[3]/li/span[2]");
     private static final By XPATH_CITY = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[2]/div[1]/div/div/span[2]");
     private static final By XPATH_PRICE = By.xpath("//*[@id=\"ad-details\"]/div[1]/div[1]/div/div[2]/div/div/span");
     private static final By XPATH_IMAGE_ANCHORS = By.cssSelector("#ad-thumbnails a");

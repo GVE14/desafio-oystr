@@ -11,6 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +54,14 @@ public class Main {
 		}
 
 		try {
-			excelService.export(list, "spreadsheet/machines.xlsx");
+
+			String filePath = "spreadsheet/machines.xlsx";
+			File file = new File(filePath);
+			File parentDir = file.getParentFile();
+
+			if (!parentDir.exists()) parentDir.mkdirs();
+
+			excelService.export(list, filePath);
 			logger.info("Spreadsheet generated successfully!");
 		} catch (Exception e) {
 			logger.error("Error generating spreadsheet: {}", e.getMessage());
