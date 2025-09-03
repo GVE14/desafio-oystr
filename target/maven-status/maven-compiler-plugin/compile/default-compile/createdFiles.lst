@@ -1,0 +1,7 @@
+com\test\interfaces\Machine.class
+com\test\interfaces\impl\AgrofyScraper.class
+com\test\domain\MachineEntity.class
+com\test\interfaces\SiteScraper.class
+com\test\Main.class
+com\test\interfaces\impl\BotImpl.class
+com\test\interfaces\Bot.class
